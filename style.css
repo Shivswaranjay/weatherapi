@@ -1,0 +1,148 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.api {
+    position: relative;
+    align-items: top;
+    padding: 4%;
+    margin-left: 1%;
+    background-color: black;
+    opacity: 80%;
+}
+
+input {
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    text-align: center;
+    opacity: 75%;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* border: 1px dotted red; */
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 150px;
+    background-color: black;
+    opacity: 80%;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.animate-charcter {
+    margin-left: 37%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-shadow: #fff;
+    background-image: linear-gradient(-225deg,
+            black 0%,
+            grey 29%,
+            grey 67%,
+            white 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+    font-size: 55px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.navbar {
+    font-weight: bold;
+    font-weight: 1400;
+    font-size: larger;
+}
+
+.clicks {
+    margin: 10;
+    padding: 10;
+    text-align: center;
+}
+
+.tech-slideshow {
+    height: 200px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow>div {
+    height: 200px;
+    width: 2526px;
+    background: url(https://openweather.co.uk/themes/openweather_b2b/assets/img/owm-clients-logos-2.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow .mover-1 {
+    animation: moveSlideshow 12s linear infinite;
+}
+
+.tech-slideshow .mover-2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -200px;
+    animation: moveSlideshow 15s linear infinite;
+}
+
+@keyframes moveSlideshow {
+    100% {
+        /* transform: translateX(-66.6666%);   */
+        transform: translateX(-80%);
+    }
+}
+
+#scale-up-center {
+    animation: scale-up-center 0.8s ease-out both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
